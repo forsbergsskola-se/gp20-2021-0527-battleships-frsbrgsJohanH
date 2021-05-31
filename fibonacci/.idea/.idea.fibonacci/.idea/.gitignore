@@ -1,0 +1,13 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/modules.xml
+/contentModel.xml
+/projectSettingsUpdater.xml
+/.idea.fibonacci.iml
+# Datasource local storage ignored files
+/../../../../../../../../../../:\Users\johan\RiderProjects\C++projects\gp20-2021-0527-battleships-frsbrgsJohanH\fibonacci\.idea\.idea.fibonacci\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/

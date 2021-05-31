@@ -30,3 +30,8 @@
 *.exe
 *.out
 *.app
+fibonacci/.idea/.idea.fibonacci/.idea/encodings.xml
+fibonacci/.idea/.idea.fibonacci/.idea/indexLayout.xml
+fibonacci/.idea/.idea.fibonacci/.idea/vcs.xml
+fibonacci/fibonacci.vcxproj
+fibonacci/fibonacci.vcxproj.filters
