@@ -1,0 +1,20 @@
+
+int main(int argc, char* argv[])
+{
+    
+    return 0;
+}
+
+
+// 2x 2D-array as boards p1 & p2 - Coordinates = g7, a2, d2 etc..
+
+// p1 place 5 ships ---> chooses 5 cells ----> p2 place 5 ships..if placed ships = 10 || ships = 0.
+
+// Game start
+
+
+//p1 bombs(checks cell), if(player 2 array have ship || !ship) ---> clear this cell -----> print hit/miss ---> shipCounter --
+//Game LOOP - 
+//p2 bombs(checks cell), if(player 1 array have ship || !ship) ---> clear this cell -----> print hit/miss
+
+//check win(if player1 shipCount == 0 || player2 shipCount == 0 ||) You win.
