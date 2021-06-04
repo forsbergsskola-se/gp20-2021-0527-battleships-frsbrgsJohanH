@@ -1,7 +1,35 @@
+#include <iostream>
+
+using namespace std;
+
+
+
+
+char playerOne[10][10];     //[i] [j] row - column
+char playerTwo[10][10];
+
+
+
 
 int main(int argc, char* argv[])
 {
-    
+   for(int i = 0; i < 10; ++i)
+       for(int j = 0; j <10; ++j)
+       {
+           playerOne[i][j] = 'E';
+       }
+
+    for (int i = 0; i < 10; ++i)
+    {
+        for(int j = 0; j < 10; ++j)
+        {
+            cout << playerOne[i][j];
+        }
+        cout << '\n';
+    }
+
+    cout << endl;
+  
     return 0;
 }
 
