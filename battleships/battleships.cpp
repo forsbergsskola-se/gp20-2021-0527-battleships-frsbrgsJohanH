@@ -19,11 +19,15 @@ void DrawBoard()
         {
             playerOne[rows][columns] = 254;
         }
-        
-    cout << "   a  b  c  d  e  f  g  h  i  j" << endl;
+    cout <<"#";
+    for(int i = 0; i <= letters[i]; i++)
+    {
+        cout << "  " << letters[i];
+    }   
+    
     for (int i = 0; i < rows; ++i)
     {
-        
+        cout << "\n";
         cout << nums[i] << + " ";
         for(int j = 0; j < columns; ++j)
         {
@@ -37,12 +41,21 @@ void DrawBoard()
     
 }
 
+const char hit = 'X';
 
 
 int main(int argc, char* argv[])
 {
 
     DrawBoard();
+
+    cout << "give me input in the form of column and row. Ex. d4" << endl;
+    string input;
+    
+    cin >> input;
+    cout << input;
+
+    
     
     return 0;
 }
