@@ -41,19 +41,37 @@ void DrawBoard()
     
 }
 
+
+int convertToCell(char letter, int number)
+{
+    (int)letter - 87;
+    cout << letter;
+    
+    return letter;
+}
+
 const char hit = 'X';
 
 
 int main(int argc, char* argv[])
 {
+    char columnInput;
+    int rowInput;
 
     DrawBoard();
 
-    cout << "give me input in the form of column and row. Ex. d4" << endl;
-    string input;
+    cout << "Enter column a - j..." << endl;
     
-    cin >> input;
-    cout << input;
+    cin >> columnInput;
+
+    cout << "Enter row 0 - 9..." << endl;
+
+    cin >> rowInput;
+
+    convertToCell(columnInput, rowInput);
+
+    
+    
 
     
     
