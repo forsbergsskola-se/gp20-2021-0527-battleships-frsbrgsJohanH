@@ -3,33 +3,47 @@
 using namespace std;
 
 
+const int rows = 10;
+const int columns = 10;
 
+char letters[10] {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'};
+int nums[10] {0 ,1, 2, 3, 4, 5, 6, 7, 8, 9};
 
-char playerOne[10][10];     //[i] [j] row - column
-char playerTwo[10][10];
+char playerOne[rows][columns];     //[i] [j] row - column
+char playerTwo[rows][columns];
 
-
-
-
-int main(int argc, char* argv[])
-{
-   for(int i = 0; i < 10; ++i)
-       for(int j = 0; j <10; ++j)
-       {
-           playerOne[i][j] = 'E';
-       }
-
-    for (int i = 0; i < 10; ++i)
-    {
-        for(int j = 0; j < 10; ++j)
+void DrawBoard()
+{ //init
+    for(int i = 0; i < rows; ++i)
+        for(int j = 0; j < columns; ++j)
         {
-            cout << playerOne[i][j];
+            playerOne[rows][columns] = 254;
+        }
+        
+    cout << "   a  b  c  d  e  f  g  h  i  j" << endl;
+    for (int i = 0; i < rows; ++i)
+    {
+        
+        cout << nums[i] << + " ";
+        for(int j = 0; j < columns; ++j)
+        {
+            
+           cout << "[" << playerOne[rows][columns]<< "]";
         }
         cout << '\n';
     }
 
     cout << endl;
-  
+    
+}
+
+
+
+int main(int argc, char* argv[])
+{
+
+    DrawBoard();
+    
     return 0;
 }
 
