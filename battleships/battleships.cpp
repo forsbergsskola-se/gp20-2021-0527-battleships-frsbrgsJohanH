@@ -12,6 +12,11 @@ int nums[10] {0 ,1, 2, 3, 4, 5, 6, 7, 8, 9};
 char playerOne[rows][columns];     //[i] [j] row - column
 char playerTwo[rows][columns];
 
+int currentPlayer;
+const char hit = 'X';
+
+
+
 void DrawBoard()
 { //init
     for(int i = 0; i < rows; ++i)
@@ -46,29 +51,42 @@ int convertToCell(char letter, int number)
 {
     (int)letter - 87;
     cout << letter;
+
+   
     
     return letter;
 }
 
-const char hit = 'X';
+void PlaceShips()
+{
+    int shipAmount = 10;
+    char columnInput;
+    int rowInput;
+
+
+    cout << "Each player have 5 ships, choose your ships tactical position on the Naval Battlefield!!" <<endl;
+    
+    
+    for(int i = 0; i == shipAmount; i++)
+    {
+        cout << "P1 place your ship. Enter column a - j...";
+        cin >> columnInput;
+        cout <<endl;
+        cout << "Enter row 0 - 9..." <<endl;
+        cin >> rowInput;
+       
+    }
+}
+
+
 
 
 int main(int argc, char* argv[])
 {
-    char columnInput;
-    int rowInput;
 
     DrawBoard();
 
-    cout << "Enter column a - j..." << endl;
     
-    cin >> columnInput;
-
-    cout << "Enter row 0 - 9..." << endl;
-
-    cin >> rowInput;
-
-    convertToCell(columnInput, rowInput);
 
     
     
@@ -91,3 +109,16 @@ int main(int argc, char* argv[])
 //p2 bombs(checks cell), if(player 1 array have ship || !ship) ---> clear this cell -----> print hit/miss
 
 //check win(if player1 shipCount == 0 || player2 shipCount == 0 ||) You win.
+
+
+
+//drop bomb code
+/*  cout << "Enter column a - j..." << endl;
+    
+cin >> columnInput;
+
+cout << "Enter row 0 - 9..." << endl;
+
+cin >> rowInput;
+
+convertToCell(columnInput, rowInput);*/
